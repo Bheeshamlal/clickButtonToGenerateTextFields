@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Text Field</title>
+</head>
+<body>
+	<button onclick="createTextField()">Create Text Field</button>
+	<div id="formContainer"></div>
+
+	<script>
+		function createTextField() {
+			// Create a new input element
+			var input = document.createElement("input");
+			input.setAttribute("type", "text");
+			input.setAttribute("name", "newTextField");
+
+			// Add the input element to the form container
+			var formContainer = document.getElementById("formContainer");
+			formContainer.appendChild(input);
+		}
+	</script>
+</body>
+</html>
